@@ -88,6 +88,9 @@ public class Main {
 //        myLinkedList.set(2, 6);
 //        myLinkedList.printList();
 
+        /*
+        insert(index, value)
+         */
         LinkedList myLinkedList = new LinkedList(0);
         myLinkedList.append(2);
         myLinkedList.printList();
