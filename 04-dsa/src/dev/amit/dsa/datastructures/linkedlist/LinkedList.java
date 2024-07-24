@@ -8,6 +8,7 @@ public class LinkedList {
     class Node {
         int value;
         Node next;
+
         Node(int value) {
             this.value = value;
         }
@@ -49,5 +50,25 @@ public class LinkedList {
             tail.next = newNode;
         }
         length++;
+    }
+
+    public Node removeLast() {
+        if (length == 0) {
+            return null;
+        }
+
+        Node pre = head, temp = head;
+        while (temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if (length == 0) {  // edge case to handle when length was 1
+            head = null;
+            tail = null;
+        }
+        return temp;
     }
 }
