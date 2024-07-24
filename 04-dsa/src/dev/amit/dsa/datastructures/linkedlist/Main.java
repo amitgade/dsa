@@ -21,11 +21,25 @@ public class Main {
 //        // (0) items
 //        System.out.println(myLinkedList.removeLast());
 
-        LinkedList myLinkedList = new LinkedList(2);
-        myLinkedList.append(3);
+//        LinkedList myLinkedList = new LinkedList(2);
+//        myLinkedList.append(3);
+//        myLinkedList.printList();
+//        System.out.println("***************************");
+//        myLinkedList.prepend(1);
+//        myLinkedList.printList();
+
+        LinkedList myLinkedList = new LinkedList(1);
+        myLinkedList.append(2);
         myLinkedList.printList();
-        System.out.println("***************************");
-        myLinkedList.prepend(1);
-        myLinkedList.printList();
+        System.out.println("******* RemoveFirst *******************");
+
+        // (2) items
+        System.out.println(myLinkedList.removeFirst().value);
+
+        // (1) items
+        System.out.println(myLinkedList.removeFirst().value);
+
+        // (0) items
+        System.out.println(myLinkedList.removeFirst());
     }
 }
