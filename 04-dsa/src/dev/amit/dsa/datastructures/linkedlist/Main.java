@@ -88,14 +88,26 @@ public class Main {
 //        myLinkedList.set(2, 6);
 //        myLinkedList.printList();
 
+//        /*
+//        insert(index, value)
+//         */
+//        LinkedList myLinkedList = new LinkedList(0);
+//        myLinkedList.append(2);
+//        myLinkedList.printList();
+//        System.out.println("************ insert(index, value) **************");
+//        myLinkedList.insert(1, 1);
+//        myLinkedList.printList();
+
         /*
-        insert(index, value)
+        remove(index)
          */
-        LinkedList myLinkedList = new LinkedList(0);
-        myLinkedList.append(2);
+        LinkedList myLinkedList = new LinkedList(21);
+        myLinkedList.append(3);
+        myLinkedList.append(54);
+        myLinkedList.append(8);
         myLinkedList.printList();
-        System.out.println("************ insert(index, value) **************");
-        myLinkedList.insert(1, 1);
+        System.out.println("************ remove(index) **************");
+        myLinkedList.remove(2);
         myLinkedList.printList();
     }
 }
