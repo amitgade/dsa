@@ -12,7 +12,7 @@ public class Main {
 //        myLinkedList.printList();
 
 //        /*
-//        append
+//        append(value)
 //         */
 //        LinkedList myLinkedList = new LinkedList(1);
 //        myLinkedList.append(2);
@@ -37,7 +37,7 @@ public class Main {
 
 
 //        /*
-//        prepend
+//        prepend(value)
 //         */
 //        LinkedList myLinkedList = new LinkedList(2);
 //        myLinkedList.append(3);
@@ -63,18 +63,29 @@ public class Main {
 //        // (0) items
 //        System.out.println(myLinkedList.removeFirst());
 
-        /*
-        get(i)
-         */
-        LinkedList myLinedList = new LinkedList(0);
-        myLinedList.append(1);
-        myLinedList.append(2);
-        myLinedList.append(3);
-        myLinedList.printList();
-        System.out.println("************ get(i) **************");
-        System.out.println(myLinedList.get(2).value);
-        System.out.println("************ get(i) **************");
-        myLinedList.printList();
+//        /*
+//        get(index)
+//         */
+//        LinkedList myLinedList = new LinkedList(0);
+//        myLinedList.append(1);
+//        myLinedList.append(2);
+//        myLinedList.append(3);
+//        myLinedList.printList();
+//        System.out.println("************ get(i) **************");
+//        System.out.println(myLinedList.get(2).value);
+//        System.out.println("************ get(i) **************");
+//        myLinedList.printList();
 
+        /*
+        set(index, value)
+         */
+        LinkedList myLinkedList = new LinkedList(21);
+        myLinkedList.append(3);
+        myLinkedList.append(54);
+        myLinkedList.append(8);
+        myLinkedList.printList();
+        System.out.println("************ set(i) **************");
+        myLinkedList.set(2, 6);
+        myLinkedList.printList();
     }
 }
