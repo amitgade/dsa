@@ -45,11 +45,10 @@ public class LinkedList {
         Node newNode = new Node(value);
         if (length == 0) {
             head = newNode;
-            tail = newNode;
         } else {
             tail.next = newNode;
-            tail = newNode;
         }
+        tail = newNode;
         length++;
     }
 
