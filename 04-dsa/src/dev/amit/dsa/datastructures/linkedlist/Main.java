@@ -73,19 +73,26 @@ public class Main {
 //        myLinedList.printList();
 //        System.out.println("************ get(i) **************");
 //        System.out.println(myLinedList.get(2).value);
-//        System.out.println("************ get(i) **************");
+//        System.out.println("************ get(index) **************");
 //        myLinedList.printList();
 
-        /*
-        set(index, value)
-         */
-        LinkedList myLinkedList = new LinkedList(21);
-        myLinkedList.append(3);
-        myLinkedList.append(54);
-        myLinkedList.append(8);
+//        /*
+//        set(index, value)
+//         */
+//        LinkedList myLinkedList = new LinkedList(21);
+//        myLinkedList.append(3);
+//        myLinkedList.append(54);
+//        myLinkedList.append(8);
+//        myLinkedList.printList();
+//        System.out.println("************ set(index, value) **************");
+//        myLinkedList.set(2, 6);
+//        myLinkedList.printList();
+
+        LinkedList myLinkedList = new LinkedList(0);
+        myLinkedList.append(2);
         myLinkedList.printList();
-        System.out.println("************ set(i) **************");
-        myLinkedList.set(2, 6);
+        System.out.println("************ insert(index, value) **************");
+        myLinkedList.insert(1, 1);
         myLinkedList.printList();
     }
 }
