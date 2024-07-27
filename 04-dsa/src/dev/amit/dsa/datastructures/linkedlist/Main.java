@@ -98,16 +98,25 @@ public class Main {
 //        myLinkedList.insert(1, 1);
 //        myLinkedList.printList();
 
-        /*
-        remove(index)
-         */
-        LinkedList myLinkedList = new LinkedList(21);
+//        /*
+//        remove(index)
+//         */
+//        LinkedList myLinkedList = new LinkedList(21);
+//        myLinkedList.append(3);
+//        myLinkedList.append(54);
+//        myLinkedList.append(8);
+//        myLinkedList.printList();
+//        System.out.println("************ remove(index) **************");
+//        myLinkedList.remove(2);
+//        myLinkedList.printList();
+
+        LinkedList myLinkedList = new LinkedList(1);
+        myLinkedList.append(2);
         myLinkedList.append(3);
-        myLinkedList.append(54);
-        myLinkedList.append(8);
+        myLinkedList.append(4);
         myLinkedList.printList();
-        System.out.println("************ remove(index) **************");
-        myLinkedList.remove(2);
+        System.out.println("************ reverse() **************");
+        myLinkedList.reverse();
         myLinkedList.printList();
     }
 }
