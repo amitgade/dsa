@@ -124,10 +124,12 @@ public class LinkedList {
         }
         if (index == 0) {
             prepend(value);
+            length++;
             return true;
         }
         if (index == length) {
             append(value);
+            length++;
             return true;
         }
         Node newNode = new Node(value);
