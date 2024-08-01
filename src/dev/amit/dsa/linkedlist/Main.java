@@ -1,4 +1,4 @@
-package dev.amit.dsa.datastructures.linkedlist;
+package dev.amit.dsa.linkedlist;
 
 public class Main {
     public static void main(String[] args) {

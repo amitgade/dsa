@@ -1,4 +1,4 @@
-package dev.amit.dsa.datastructures.linkedlist;
+package dev.amit.dsa.linkedlist;
 
 public class LinkedList {
     private Node head;
