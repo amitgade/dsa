@@ -8,8 +8,11 @@ public class Main {
         myLinkedList.prepend(2);
         myLinkedList.prepend(1);
 
-        System.out.println(myLinkedList.remove(1).value);
         myLinkedList.printList();
 
+        System.out.println();
+        myLinkedList.reverse();
+
+        myLinkedList.printList();
     }
 }
