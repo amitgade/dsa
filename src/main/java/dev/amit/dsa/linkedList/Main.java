@@ -8,7 +8,7 @@ public class Main {
         myLinkedList.prepend(2);
         myLinkedList.prepend(1);
 
-        myLinkedList.set(1, 22);
+        System.out.println(myLinkedList.insert(2, 33));
         myLinkedList.printList();
 
     }
