@@ -8,8 +8,13 @@ public class Main {
         myLinkedList.prepend(2);
         myLinkedList.prepend(1);
 
-        myLinkedList.removeFirst();
-        myLinkedList.printList();
+        System.out.println(myLinkedList.get(0).value);
+        System.out.println(myLinkedList.get(1).value);
+        System.out.println(myLinkedList.get(2).value);
+        System.out.println(myLinkedList.get(3).value);
+        System.out.println(myLinkedList.get(4).value);
+        System.out.println(myLinkedList.get(-1));
+        System.out.println(myLinkedList.get(5));
 
     }
 }
