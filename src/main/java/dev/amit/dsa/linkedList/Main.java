@@ -8,7 +8,7 @@ public class Main {
         myLinkedList.prepend(2);
         myLinkedList.prepend(1);
 
-        myLinkedList.removeLast();
+        myLinkedList.removeFirst();
         myLinkedList.printList();
 
     }
