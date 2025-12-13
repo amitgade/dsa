@@ -203,19 +203,38 @@ public class LinkedList {
 
     // Find k-th Node from end
     // Solution 1
+//    public Node findKthFromEnd(int k) {
+//        if (k <= 0) return null;
+//        Node slow = head;
+//        Node fast = head;
+//        int i = 0;
+//        while (fast != null) {
+//            fast = fast.next;
+//            if (i >= k) {
+//                slow = slow.next;
+//            }
+//            i++;
+//        }
+//        if (k > i) return null;
+//        return slow;
+//    }
+    // Solution 2
     public Node findKthFromEnd(int k) {
         if (k <= 0) return null;
+
         Node slow = head;
         Node fast = head;
-        int i = 0;
-        while (fast != null) {
+
+        for (int i = 0; i < k; i++) {
+            if (fast == null) return null;
             fast = fast.next;
-            if (i >= k) {
-                slow = slow.next;
-            }
-            i++;
         }
-        if (k > i) return null;
+
+        while (fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+
         return slow;
     }
 }
