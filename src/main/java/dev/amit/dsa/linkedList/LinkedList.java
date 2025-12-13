@@ -158,6 +158,7 @@ public class LinkedList {
             return temp;
         }
     }
+
     public void reverse() {
         Node temp = head;
         head = tail;
@@ -190,6 +191,7 @@ public class LinkedList {
         }
         return slow;
     }
+
     // HASLOOP METHOD // - Floyd's Tortoise and Hare algorithm
     public boolean hasLoop() {
         Node slow = head;
@@ -273,6 +275,17 @@ public class LinkedList {
             }
             current = current.next;
         }
+    }
+
+    //  binaryToDecimal
+    public int binaryToDecimal() {
+        int decimalVal = 0;
+        Node current = head;
+        while (current != null) {
+            decimalVal = (decimalVal * 2) + current.value;
+            current = current.next;
+        }
+        return decimalVal;
     }
 
 }
