@@ -237,4 +237,22 @@ public class LinkedList {
 
         return slow;
     }
+    // REMOVEDUPLICATES METHOD - brute-force approach//
+    public void removeDuplicates() {
+        Node current = head;
+
+        while (current != null) {
+            Node runner = current;
+            while (runner.next != null) {
+                if (current.value == runner.next.value) {
+                    runner.next = runner.next.next;
+                    length--;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            current = current.next;
+        }
+    }
+
 }
