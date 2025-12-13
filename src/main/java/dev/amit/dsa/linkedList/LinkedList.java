@@ -200,4 +200,22 @@ public class LinkedList {
         }
         return false;
     }
+
+    // Find k-th Node from end
+    // Solution 1
+    public Node findKthFromEnd(int k) {
+        if (k <= 0) return null;
+        Node slow = head;
+        Node fast = head;
+        int i = 0;
+        while (fast != null) {
+            fast = fast.next;
+            if (i >= k) {
+                slow = slow.next;
+            }
+            i++;
+        }
+        if (k > i) return null;
+        return slow;
+    }
 }
