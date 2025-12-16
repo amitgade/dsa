@@ -26,6 +26,7 @@ public class Stack {
     public int getHeight() {
         return height;
     }
+
     public void printStack() {
         Node temp = top;
         while (temp != null) {
@@ -48,6 +49,6 @@ public class Stack {
 //            newNode.next = top;
 //            top = newNode;
 //        }
-        height++;
+//        height++;
     }
 }
