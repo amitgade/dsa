@@ -35,4 +35,11 @@ public class Stack<T> {
     public void push(T value) {
         stackList.add(value);
     }
+
+    // POP METHOD
+    public T pop() {
+        if (isEmpty()) return null;
+        return stackList.remove(stackList.size() - 1);
+    }
+
 }
