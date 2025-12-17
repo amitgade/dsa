@@ -1,4 +1,4 @@
-package dev.amit.dsa.stack.arraylistimpl;
+package dev.amit.dsa.stack.usingarraylist;
 
 public class TestPush {
     public static void main(String[] args) {
